@@ -382,6 +382,7 @@ button {
   color: black;
   padding: 20px;
   font-size: 1em;
+  font-weight: 800;
   text-decoration: none;
   border: solid 2px transparent;
   border-radius: 6px;
@@ -401,6 +402,38 @@ button {
 }
 
 .button-primary a:active {
+  color: #ffaa00;
+}
+
+.button-secondary {
+  color: white;
+}
+
+.button-secondary a:link {
+  background-color: #0087ff;
+  color: white;
+  padding: 20px;
+  font-size: 1em;
+  font-weight: 800;
+  text-decoration: none;
+  border: solid 2px transparent;
+  border-radius: 6px;
+}
+
+.button-secondary a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.button-secondary a:hover {
+  background-color: #ffaa00;
+  border: 2px solid white;
+  color: black;
+  transition: 0.1s;
+  text-decoration: none;
+}
+
+.button-secondary a:active {
   color: #ffaa00;
 }
 
@@ -458,7 +491,7 @@ button {
   background-color: #0087ff;
 }
 
-.tag {
+.tag-blue {
   display: inline;
   background-color: #0087ff;
   padding: 5px;
@@ -466,12 +499,20 @@ button {
   color: white;
 }
 
+.tag-orange {
+  display: inline;
+  background-color: #ffaa00;
+  padding: 5px;
+  border-radius: 3px;
+  color: black;
+}
+
 .colour-one {
   background-color: #ffd88a;
 }
 
 .colour-two {
-  background-color: #ffc043;
+  background-color: #a7d6ff;
 }
 
 .white {
