@@ -380,11 +380,11 @@ button {
 .button-primary a:link {
   background-color: #ffaa00;
   color: black;
-  padding: 20px;
+  padding: 15px;
   font-size: 1em;
   font-weight: 800;
   text-decoration: none;
-  border: solid 2px transparent;
+  border: solid 6px transparent;
   border-radius: 6px;
 }
 
@@ -395,7 +395,7 @@ button {
 
 .button-primary a:hover {
   background-color: #0087ff;
-  border: 2px solid white;
+  border: 6px double white;
   color: white;
   transition: 0.1s;
   text-decoration: none;
@@ -412,11 +412,11 @@ button {
 .button-secondary a:link {
   background-color: #0087ff;
   color: white;
-  padding: 20px;
+  padding: 15px;
   font-size: 1em;
   font-weight: 800;
   text-decoration: none;
-  border: solid 2px transparent;
+  border: solid 6px transparent;
   border-radius: 6px;
 }
 
@@ -427,7 +427,7 @@ button {
 
 .button-secondary a:hover {
   background-color: #ffaa00;
-  border: 2px solid white;
+  border: 6px double white;
   color: black;
   transition: 0.1s;
   text-decoration: none;
