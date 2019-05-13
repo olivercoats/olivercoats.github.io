@@ -462,13 +462,13 @@ button {
   width: 250px;
   max-width: 100%;
   height: auto;
-  -webkit-transition: -webkit-transform .8s ease-in-out;
-  transition:         transform .8s ease-in-out;
+  -webkit-transition: -webkit-transform 10s ease-in-out;
+  transition:         transform 10s ease-in-out;
 }
 
 .header img:hover {
-  -webkit-transform: rotate(1080deg);
-          transform: rotate(1080deg);
+  -webkit-transform: rotate(18000deg);
+          transform: rotate(18000deg);
 }
 
 .project {
