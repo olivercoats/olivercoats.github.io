@@ -118,7 +118,7 @@ button {
   color: rgba(255, 255, 255, 0.5);
   font-size: 30px;
   font-weight: 900;
-  mix-blend-mode: overlay;
+  /* mix-blend-mode: overlay; */
   text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   bottom: 0px;
 }
