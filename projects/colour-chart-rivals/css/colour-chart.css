@@ -134,6 +134,13 @@ button {
   opacity: 1;
 }
 
+.colour-tile:focus .rivals  {
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
 .rivals {
   position: relative;
   background-color: transparent;
