@@ -55,9 +55,10 @@ button {
 }
 
 .colour-chart-row > div {
-  width: 190px;
-  /* height: 190px; */
-  padding-top: 190px;
+  width: 16.6666%;
+  height: 0;
+  /* padding-top: 190px; */
+  padding-bottom: 15.319%;
   margin: 8px;
 }
 
@@ -72,9 +73,10 @@ button {
 }
 
 .colour-chart-row-two-items > div {
-  width: 190px;
+  width: 50%;
   /* height: 190px; */
-  padding-top: 190px;
+  /* padding-top: 190px; */
+  padding-bottom: 50%;
   margin: 8px;
 }
 
@@ -83,8 +85,8 @@ button {
 }
 
 .colour-chart {
-  display: table;
-  display: grid;
+  /* display: table; */
+  /* display: grid; */
   grid-gap: 15px 15px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
   grid-auto-rows: 170px;
@@ -107,8 +109,9 @@ button {
 .colour-tile {
   position: relative;
   background: url("https://raw.githubusercontent.com/olivercoats/olivercoats.github.io/master/projects/colour-chart/images/texture10.png");
+  height: 0;
   background-size: cover;
-  padding: 3px 3px 0px 4px;
+  /* padding: 3px 3px 0px 4px; */
   border-radius: 6px;
   box-shadow: inset 2px 2px 20px rgba(0, 0, 0, 0.11), 2px 2px 20px rgba(0, 0, 0, 0.21);
 }
@@ -121,6 +124,133 @@ button {
   /* mix-blend-mode: overlay; */
   text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   bottom: 0px;
+  margin: 0px 3px 2px 8px;
+}
+
+.colour-tile:hover .rivals  {
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.rivals {
+  position: relative;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 100%;
+  /* top: 5rem; */
+  /* left: 50%; */
+  z-index: 2;
+  opacity: 0;
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  transition: all 0.3s;
+  transform-origin: center;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.1s;
+}
+
+.rivals-tile-1 {
+  position: absolute;
+  width: 40%;
+  height: 0;
+  padding-bottom: 40%;
+  top: -0.6rem;
+  left: -0.6rem;
+  z-index: 3;
+  border-radius: 3px;
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  transition: all 0.5s;
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.05);
+}
+
+.rivals-tile-2 {
+  position: absolute;
+  width: 40%;
+  height: 0;
+  padding-bottom: 40%;
+  top: 1.4rem;
+  left: 1.4rem;
+  z-index: 4;
+  border-radius: 3px;
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  transition: all 0.5s;
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.05);
+}
+
+.rivals-tile-3 {
+  position: absolute;
+  width: 40%;
+  height: 0;
+  padding-bottom: 40%;
+  top: 3.4rem;
+  left: 3.4rem;
+  z-index: 4;
+  border-radius: 3px;
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  transition: all 0.5s;
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.05);
+}
+
+.rivals-tile-4 {
+  position: absolute;
+  width: 40%;
+  height: 0;
+  padding-bottom: 40%;
+  top: 5.4rem;
+  left: 5.4rem;
+  z-index: 4;
+  border-radius: 3px;
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  transition: all 0.5s;
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.05);
+}
+
+.rivals-tile-5 {
+  position: absolute;
+  width: 40%;
+  height: 0;
+  padding-bottom: 40%;
+  top: 7.4em;
+  left: 7.4em;
+  z-index: 4;
+  border-radius: 3px;
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  transition: all 0.5s;
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.05);
+}
+
+.rivals-tile-1:hover, .rivals-tile-2:hover, .rivals-tile-3:hover, .rivals-tile-4:hover, .rivals-tile-5:hover {
+  -ms-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  transition-timing-function: ease-in-out;
+  transition: all 0.5s;
+}
+
+.rival-name {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+  font-weight: 900;
+  /* mix-blend-mode: overlay; */
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  top: 3px;
+  right: 3px;
+  margin: 0px 3px 2px 8px;
 }
 
 @media screen and (min-width: 1201px) and (max-width: 1250px) {
@@ -129,9 +259,10 @@ button {
   }
   
   .colour-chart-row > div {
-    width: 180px;
+    width: 16.6666%;
     /* height: 180px; */
-    padding-top: 180px;
+    /* padding-top: 180px; */
+    padding-bottom: 15.319%;
     margin: 8px;
   }
   
@@ -140,9 +271,10 @@ button {
   }
   
   .colour-chart-row-two-items > div {
-    width: 180px;
+    width: 50%;
     /* height: 180px; */
-    padding-top: 180px;
+    /* padding-top: 180px; */
+    padding-bottom: 50%;
     margin: 8px;
   }
   
@@ -179,9 +311,10 @@ button {
   }
   
   .colour-chart-row > div {
-    width: 180px;
+    width: 16.6666%;
     /* height: 160px; */
-    padding-top: 180px;
+    /* padding-top: 180px; */
+    padding-bottom: 15.319%;
     margin: 8px;
   }
   
@@ -190,9 +323,10 @@ button {
   }
   
   .colour-chart-row-two-items > div {
-    width: 180px;
+    width: 50%;
     /* height: 160px; */
-    padding-top: 180px;
+    /* padding-top: 180px; */
+    padding-bottom: 50%;
     margin: 8px;
   }
   
@@ -230,9 +364,10 @@ button {
   }
   
   .colour-chart-row > div {
-    width: 160px;
+    width: 16.6666%;
     /* height: 140px; */
-    padding-top: 160px;
+    /* padding-top: 160px; */
+    padding-bottom: 15.319%;
     margin: 8px;
   }
 
@@ -241,9 +376,10 @@ button {
   }
   
   .colour-chart-row-two-items > div {
-    width: 160px;
+    width: 50%;
     /* height: 140px; */
-    padding-top: 160px;
+    /* padding-top: 160px; */
+    padding-bottom: 50%;
     margin: 8px;
   }
   
@@ -281,9 +417,10 @@ button {
   }
   
   .colour-chart-row > div {
-    width: 160px;
+    width: 16.6666%;
     /* height: 120px; */
-    padding-top: 140px;
+    /* padding-top: 140px; */
+    padding-bottom: 15.319%;
     margin: 6px;
   }
 
@@ -292,9 +429,10 @@ button {
   }
   
   .colour-chart-row-two-items > div {
-    width: 160px;
+    width: 50%;
     /* height: 120px; */
-    padding-top: 140px;
+    /* padding-top: 140px; */
+    padding-bottom: 50%;
     margin: 6px;
   }
   
@@ -332,9 +470,10 @@ button {
   }
   
   .colour-chart-row > div {
-    width: 160px;
+    width: 16.6666%;
     /* height: 120px; */
-    padding-top: 120px;
+    /* padding-top: 120px; */
+    padding-bottom: 15.319%;
     margin: 6px;
 }
 
@@ -343,9 +482,10 @@ button {
   }
   
   .colour-chart-row-two-items > div {
-    width: 160px;
+    width: 50%;
     /* height: 120px; */
-    padding-top: 120px;
+    /* padding-top: 120px; */
+    padding-bottom: 50%;
     margin: 6px;
 }
   
@@ -383,9 +523,10 @@ button {
   }
   
   .colour-chart-row > div {
-    width: 160px;
+    width: 16.6666%;
     /* height: 120px; */
-    padding-top: 100px;
+    /* padding-top: 100px; */
+    padding-bottom: 15.319%;
     margin: 4px;
 }
 
@@ -394,9 +535,10 @@ button {
   }
   
   .colour-chart-row-two-items > div {
-    width: 160px;
+    width: 50%;
     /* height: 120px; */
-    padding-top: 100px;
+    /* padding-top: 100px; */
+    padding-bottom: 50%;
     margin: 4px;
 }
   
@@ -435,9 +577,10 @@ button {
   }
   
   .colour-chart-row > div {
-    width: 160px;
+    width: 16.6666%;
     /* height: 90px; */
-    padding-top: 90px;
+    /* padding-top: 90px; */
+    padding-bottom: 15.319%;
     margin: 3px;
   }
 
@@ -446,9 +589,10 @@ button {
   }
   
   .colour-chart-row-two-items > div {
-    width: 160px;
+    width: 50%;
     /* height: 90px; */
-    padding-top: 90px;
+    /* padding-top: 90px; */
+    padding-bottom: 50%;
     margin: 3px;
   }
   
@@ -486,9 +630,10 @@ button {
   }
   
   .colour-chart-row > div {
-    width: 160px;
+    width: 16.6666%;
     /* height: 80px; */
-    padding-top: 80px;
+    /* padding-top: 80px; */
+    padding-bottom: 15.319%;
     margin: 2px;
   }
 
@@ -497,9 +642,10 @@ button {
   }
   
   .colour-chart-row-two-items > div {
-    width: 160px;
+    width: 50%;
     /* height: 80px; */
-    padding-top: 80px;
+    /* padding-top: 80px; */
+    padding-bottom: 50%;
     margin: 2px;
   }
   
@@ -538,9 +684,10 @@ button {
   }
   
   .colour-chart-row > div {
-    width: 160px;
+    width: 16.6666%;
     /* height: 75px; */
-    padding-top: 75px;
+    /* padding-top: 75px; */
+    padding-bottom: 15.319%;
     margin: 2px;
   }
 
@@ -549,9 +696,10 @@ button {
   }
   
   .colour-chart-row-two-items > div {
-    width: 160px;
+    width: 50%;
     /* height: 75px; */
-    padding-top: 75px;
+    /* padding-top: 75px; */
+    padding-bottom: 50%;
     margin: 2px;
   }
   
@@ -592,9 +740,10 @@ button {
   }
   
   .colour-chart-row > div {
-    width: 160px;
+    width: 16.6666%;
     /* height: 60px; */
-    padding-top: 60px;
+    /* padding-top: 60px; */
+    padding-bottom: 15.319%;
     margin: 1px;
   }
 
@@ -603,9 +752,10 @@ button {
   }
   
   .colour-chart-row-two-items > div {
-    width: 160px;
+    width: 50%;
     /* height: 60px; */
-    padding-top: 60px;
+    /* padding-top: 60px; */
+    padding-bottom: 50%;
     margin: 1px;
   }
   
