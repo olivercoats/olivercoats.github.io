@@ -521,6 +521,7 @@ a:hover {
   border-radius: 5px;
   background-color: #0087ff;
   margin-top: 20px;
+  font-size: 3em;
 }
 
 .tag-blue {
@@ -529,6 +530,7 @@ a:hover {
   padding: 5px;
   border-radius: 3px;
   color: white;
+  font-size: 2em;
 }
 
 .tag-orange {
@@ -537,6 +539,7 @@ a:hover {
   padding: 5px;
   border-radius: 3px;
   color: black;
+  font-size: 2em;
 }
 
 .colour-one {
